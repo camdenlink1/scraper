@@ -2,7 +2,11 @@ var express = require('express');
 var fs = require('fs');
 var request = require('request');
 var cheerio = require('cheerio');
+var cors = require('cors')
+
 var app     = express();
+
+app.use(cors())
 
 app.use(express.static(__dirname));
 
